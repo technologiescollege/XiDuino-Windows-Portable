@@ -17,6 +17,10 @@ _La documentation pour l'installation et l'utilisation de Xi sont fournies dans 
 
 **ATTENTION** : celle-ci est en perpétuelle évolution car le créateur de s2a/Xi, Alan Yorinks, continue à faire évoluer ses projets. Bien que parfaitement fonctionnelle, quand une version stable sera en ligne je traduirai sa documentation.
 
+## Avec une interface graphique
+
+![ScreenShot](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/documentation/Capture_EXE.JPG)
+
 ### Limites connues à ce jour imposées par l'équipe de développement de Scratch :
 1. **Xi ne fonctionne que** sur la version en ligne de Scratch2.0
 2. Les projets faits en utilisant Xi ne peuvent pas être sauvegardés sur votre compte en ligne
