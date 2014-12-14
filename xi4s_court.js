@@ -681,7 +681,7 @@ new (function () {
         ];
 
         var headerKeywords = {
-            board: "Sur la carte n° ",
+            board: "sur C",
             pin: "la broche "
         };
 
@@ -702,27 +702,27 @@ new (function () {
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            ['w', "utiliser comme carte n° %m.bdNum celle à l'adresse IP / port %s : %s", 'setBoard', '1', 'localhost', '1234'],
-            [' ', 'sur la carte n° %m.bdNum, activer la broche Digital %n en mode %m.pinMode', 'pinMode', '1', '2', '1. entrée'],
-            [' ', "sur la carte n° %m.bdNum, mettre l'état logique de la broche Digital %n à %m.onOff ", 'digitalWrite', '1', '2', 'faux / bas'],
-            [' ', 'sur la carte n° %m.bdNum, écrire sur la broche PWM~ %n la valeur %n', 'analogWrite', '1', '3', '128'],
-            [' ', 'sur la carte n° %m.bdNum, orienter le servo-moteur sur la broche %n de %n degrés - inversé ? %m.inversion',
+            ['w', "définir comme carte [C%m.bdNum ] celle à l'adresse IP / port %s : %s", 'setBoard', '1', 'localhost', '1234'],
+            [' ', 'sur C%m.bdNum activer la broche Numérique %n en mode %m.pinMode', 'pinMode', '1', '2', '1. entrée'],
+            [' ', "sur C%m.bdNum mettre l'état logique de la broche Digital %n à %m.onOff ", 'digitalWrite', '1', '2', 'faux / bas'],
+            [' ', 'sur C%m.bdNum écrire sur la broche PWM~ %n la valeur %n', 'analogWrite', '1', '3', '128'],
+            [' ', 'sur C%m.bdNum orienter le servo-moteur sur la broche %n de %n degrés - inversé ? %m.inversion',
                 'moveStandardServo', '1', '3', '90', '1. faux'],
-            [' ', 'sur la carte n° %m.bdNum, faire tourner le servo-moteur continu sur la broche %n dans la direction %m.motorDirection - inversé ? %m.inversion, à la vitesse (0.0 - 1.0) %n ',
+            [' ', 'sur C%m.bdNum faire tourner le servo-moteur continu sur la broche %n dans la direction %m.motorDirection - inversé ? %m.inversion - à la vitesse (0.0 - 1.0) %n ',
                 'moveContinuousServo', '1', '3', '1. avant', '1. faux', '.5'],
-            [' ', 'sur la carte n° %m.bdNum, arrêter le servo-moteur de la broche %n !', 'stopServo', '1', '3'],
-            [' ', 'sur la carte n° %m.bdNum, jouer un son sur la broche %n de fréquence (Hz) %n sur une durée (ms) de %n', 'playTone', '1', '3', '1000', '500'],
-            [' ', 'sur la carte n° %m.bdNum, arrêter le son de la broche %n !', 'noTone', '1', '3'],
+            [' ', 'sur C%m.bdNum arrêter le servo-moteur de la broche %n !', 'stopServo', '1', '3'],
+            [' ', 'sur C%m.bdNum jouer un son sur la broche %n de fréquence (Hz) %n sur une durée (ms) de %n', 'playTone', '1', '3', '1000', '500'],
+            [' ', 'sur C%m.bdNum arrêter le son de la broche %n !', 'noTone', '1', '3'],
             [' ', 'niveau de débogage : %m.dbgLevel', 'setDebugLevel', '0'],
-            ['r', "sur la carte n° %m.bdNum, l'état logique de la broche Digital %n", 'getDigitalInputData', '1', '2'],
-            ['r', 'sur la carte n° %m.bdNum, la valeur lue sur la broche analogique A %n', 'getAnalogSensorData', '1', '2'],
-            ['r', 'sur la carte n° %m.bdNum, la distance mesurée en %m.distance par le capteur Infra-Rouge de la broche %n', 'getInfraredDistanceData', '1', '1. cm', '2'],
-            ['r', 'sur la carte n° %m.bdNum, la distance mesurée en %m.distance par le Sonar de la broche %n', 'getSonarData', '1', '1. cm', '2'],
-            [' ', 'sur la carte n° %m.bdNum, activer pour un moteur pas-à-pas 4 fils les broches %n   %n   %n   %n avec une rotation de %n pas par tour', 'fourWireStepperPins', '1', '8', '9', '10', '11', '500'],
-            [' ', 'sur la carte n° %m.bdNum, activer la carte de moteur pas-à-pas pour la broche %n, dans la direction %n à raison de %n pas par tour', 'stepperDriverPins', '1', '8', '9', 500],
-            [' ', 'sur la carte n° %m.bdNum, faire tourner le moteur pas-à-pas sur la broche %n : %n tr/mn, direction %m.motorDirection , accélération : %n , décélération : %n pour un nb de pas : %n',
+            ['r', "sur C%m.bdNum l'état logique de la broche Digital %n", 'getDigitalInputData', '1', '2'],
+            ['r', 'sur C%m.bdNum la valeur lue sur la broche analogique A %n', 'getAnalogSensorData', '1', '2'],
+            ['r', 'sur C%m.bdNum la distance mesurée en %m.distance par le capteur Infra-Rouge de la broche %n', 'getInfraredDistanceData', '1', '1. cm', '2'],
+            ['r', 'sur C%m.bdNum la distance mesurée en %m.distance par le Sonar de la broche %n', 'getSonarData', '1', '1. cm', '2'],
+            [' ', 'sur C%m.bdNum activer un moteur pas-à-pas 4 fils sur les broches %n   %n   %n   %n avec une rotation de %n pas par tour', 'fourWireStepperPins', '1', '8', '9', '10', '11', '500'],
+            [' ', 'sur C%m.bdNum activer la carte de moteur pas-à-pas pour la broche %n, dans la direction %n à raison de %n pas par tour', 'stepperDriverPins', '1', '8', '9', 500],
+            [' ', 'sur C%m.bdNum faire tourner le moteur pas-à-pas sur la broche %n : %n tr/mn, direction %m.motorDirection , accélération : %n , décélération : %n pour un nb de pas : %n',
                 'moveStepper', '1', '8', '180', '1. avant', '1600', '1600', '2000'],
-            [' ', 'sur la carte n° %m.bdNum, arrêter le moteur pas-à-pas de la broche %n !', 'stopStepper', '1', '8']
+            [' ', 'sur C%m.bdNum arrêter le moteur pas-à-pas de la broche %n !', 'stopStepper', '1', '8']
 
 
         ],
@@ -732,7 +732,7 @@ new (function () {
             onOff: ['1. faux / bas', '2. vrai / haut'],
             pinMode: ['1. entrée', '2. sortie', '3. mesure analogique', '4. impulsions PWM~',
                 '5. servo-moteur standard (sur PWM~)', '6. servo-moteur à rotation continue (sur PWM~)', '7. mesure distance par Infra-Rouge (entrée Analogique)',
-                '8. mesure distance par Sonar (entrée Digital)', '9. sortie Son (sortie Digital)'],
+                '8. mesure distance par Sonar (entrée Numérique)', '9. sortie Son (sortie Numérique)'],
             motorDirection: ['1. avant', '2. arrière'],
             inversion: ['1. faux', '2. vrai'],
             distance: ['1. cm', '2. pouces']
