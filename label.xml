@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Traductions>
+  <Parametre Separateur="\">
+    <Proprietes>
+      <Propriete>Caption</Propriete>
+      <Propriete>Text</Propriete>
+      <Propriete>Hint</Propriete>
+      <Propriete>Items</Propriete>
+    </Proprietes>
+  </Parametre>
+  <Langues>
+    <Langue index="FR" name="FrenchLang" default="1" />
+    <Langue index="EN" name="EnglishLang" default="0" />
+  </Langues>
+  <Labels>
+    <InterfaceXi type="TInterfaceXi">
+      <Caption>
+        <FR>XiDuino : connexion Scratch2 - Arduino</FR>
+        <EN>XiDuino : connecting Scratch2Arduino</EN>
+      </Caption>
+    </InterfaceXi>
+    <Label1 type="TLabel">
+      <Caption>
+        <FR>Une carte Arduino est connectée sur</FR>
+        <EN>An Arduino card is connected on</EN>
+      </Caption>
+    </Label1>
+    <Label2 type="TLabel">
+      <Caption>
+        <FR>le port COM</FR>
+        <EN>COM port #</EN>
+      </Caption>
+    </Label2>
+    <Label3 type="TLabel">
+      <Caption>
+        <FR>au port d'écoute</FR>
+        <EN>XiServer is on #</EN>
+      </Caption>
+    </Label3>
+    <Label4 type="TLabel">
+      <Caption>
+        <FR>La fenêtre se fermera s'il y a un</FR>
+        <EN>The pop-up window will close if</EN>
+      </Caption>
+    </Label4>
+    <Label5 type="TLabel">
+      <Caption>
+        <FR>problème de port ou bien si la</FR>
+        <EN>there's a COM problem or if the Arduino card</EN>
+      </Caption>
+    </Label5>
+    <Label6 type="TLabel">
+      <Caption>
+        <FR>carte Arduino est mal programmée.</FR>
+        <EN>is not uploaded correctly.</EN>
+      </Caption>
+    </Label6>	
+    <Label7 type="TLabel">
+      <Caption>
+        <FR>Adresse(s) IP du poste :</FR>
+        <EN>IP adress:</EN>
+      </Caption>
+    </Label7>
+    <Button1 type="TButton">
+      <Caption>
+        <FR>Lancer XiDuino</FR>
+        <EN>Launch XiDuino</EN>
+      </Caption>
+    </Button1>
+    <Button2 type="TButton">
+      <Caption>
+        <FR>Lancer Scratch2</FR>
+        <EN>Launch Scratch2</EN>
+      </Caption>
+    </Button2>
+    <Button3 type="TButton">
+      <Caption>
+        <FR>Scratch2 en ligne</FR>
+        <EN>Scratch2 online</EN>
+      </Caption>
+    </Button3>
+    <Langues type="TMenuItem">
+      <Caption>
+        <FR>&Langues</FR>
+        <EN>&Languages</EN>
+      </Caption>
+    </Langues>
+    <FrenchLang type="TMenuItem">
+      <Caption>
+        <FR>Français</FR>
+        <EN>French</EN>
+      </Caption>
+    </FrenchLang>
+    <EnglishLang type="TMenuItem">
+      <Caption>
+        <FR>Anglais</FR>
+        <EN>English</EN>
+      </Caption>
+    </EnglishLang>
+    <Fichier type="TMenuItem">
+      <Caption>
+        <FR>&Fichier</FR>
+        <EN>&File</EN>
+      </Caption>
+    </Fichier>
+			<Bibliothque type="TMenuItem">
+			  <Caption>
+				<FR>B&ibliothèque</FR>
+				<EN>L&ibrairie</EN>
+			  </Caption>
+			</Bibliothque>
+			<ExemplesScratch2 type="TMenuItem">
+			  <Caption>
+				<FR>&Projets Scratch2</FR>
+				<EN>&Project Scratch2</EN>
+			  </Caption>
+			</ExemplesScratch2>
+			<Quitter1 type="TMenuItem">
+			  <Caption>
+				<FR>&Quitter</FR>
+				<EN>&Quit</EN>
+			  </Caption>
+			</Quitter1>
+    <Outils1 type="TMenuItem">
+      <Caption>
+        <FR>&Outils</FR>
+        <EN>T&ools</EN>
+      </Caption>
+    </Outils1>
+			<AfficherladresseIPduposte1 type="TMenuItem">
+			  <Caption>
+				<FR>Afficher l'adresse &IP du poste</FR>
+				<EN>Show &IP adress</EN>
+			  </Caption>
+			</AfficherladresseIPduposte1>
+			<Gestionnairedepriphriques1 type="TMenuItem">
+			  <Caption>
+				<FR>Gestio&nnaire de périphériques</FR>
+				<EN>Device ma&nagement</EN>
+			  </Caption>
+			</Gestionnairedepriphriques1>
+			<Ouvrir type="TMenuItem">
+			  <Caption>
+				<FR>&Localiser Scratch 2</FR>
+				<EN>&Locate Scratch2</EN>
+			  </Caption>
+			</Ouvrir>
+			<nodejs type="TMenuItem">
+			  <Caption>
+				<FR>Installer &node.js sur ce poste</FR>
+				<EN>Install &node.js in this directory</EN>
+			  </Caption>
+			</nodejs>		
+			<Init type="TMenuItem">
+			  <Caption>
+				<FR>Réinitialiser les p&aramètres</FR>
+				<EN>Initialise p&arameters</EN>
+			  </Caption>
+			</Init>		
+    <Documentation1 type="TMenuItem">
+      <Caption>
+        <FR>&Documentation</FR>
+        <EN>&Documentation</EN>
+      </Caption>
+    </Documentation1>
+    <AllerplusloinBlocklyDuino1 type="TMenuItem">
+      <Caption>
+        <FR>Aller plus loin avec &BlocklyDuino</FR>
+        <EN>Learn furthermore with &BlocklyDuino</EN>
+      </Caption>
+    </AllerplusloinBlocklyDuino1>
+    <Aide1 type="TMenuItem">
+      <Caption>
+        <FR>&Aide</FR>
+        <EN>&Help</EN>
+      </Caption>
+    </Aide1>
+			<Diaporamadeprsenation1 type="TMenuItem">
+			  <Caption>
+				<FR>&0. Diaporama de présentation</FR>
+				<EN>&0. slideshow introduction</EN>
+			  </Caption>
+			</Diaporamadeprsenation1>
+			<PrparerArduino1 type="TMenuItem">
+			  <Caption>
+				<FR>&1. Préparer la carte Arduino</FR>
+				<EN>&1. prepare Arduino card</EN>
+			  </Caption>
+			</PrparerArduino1>
+			<Utilisation1 type="TMenuItem">
+			  <Caption>
+				<FR>&2. Utilisation de s2a</FR>
+				<EN>&2. how to use s2a</EN>
+			  </Caption>
+			</Utilisation1>
+			<N4Principesdeprogrammation1 type="TMenuItem">
+			  <Caption>
+				<FR>&3. Principes de programmation</FR>
+				<EN>&3. the best way to code</EN>
+			  </Caption>
+			</N4Principesdeprogrammation1>
+			<N3Mmentodescommandes1 type="TMenuItem">
+			  <Caption>
+				<FR>&4. Mémento des commandes</FR>
+				<EN>&4. s2a command summary</EN>
+			  </Caption>
+			</N3Mmentodescommandes1>
+			<Wiki1 type="TMenuItem">
+			  <Caption>
+				<FR>Wiki</FR>
+				<EN>Wiki</EN>
+			  </Caption>
+			</Wiki1>
+			<A_propos type="TMenuItem">
+			  <Caption>
+				<FR>Fichiers source</FR>
+				<EN>Github file</EN>
+			  </Caption>
+			</A_propos>
+			<SiteofficieldeXi type="TMenuItem">
+			  <Caption>
+				<FR>Site officiel de Xi</FR>
+				<EN>Xi official site</EN>
+			  </Caption>
+			</SiteofficieldeXi>
+			<Apropos1 type="TMenuItem">
+			  <Caption>
+				<FR>A propos</FR>
+				<EN>About</EN>
+			  </Caption>
+			</Apropos1>
+  </Labels>
+</Traductions>

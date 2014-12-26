@@ -1,4 +1,4 @@
-/*********************************************************************************************
+﻿/*********************************************************************************************
  *
  *                                     * * * Xi4s * * *
  *
@@ -638,7 +638,7 @@ new (function () {
             // 1
             "ne peut pas être configuré avec le mode voulu.",
             //2
-            "n'est pas configurée comme une sortie Digital.",
+            "n'est pas configurée comme une sortie Numérique.",
             //3
             "n'est pas configurée comme une sortie Analogique.",
             //4
@@ -705,7 +705,7 @@ new (function () {
             ['w', "définir comme carte [C%m.bdNum ] celle à l'adresse IP / port %s : %s", 'setBoard', '1', 'localhost', '1234'],
 			[' '],
             [' ', 'sur C%m.bdNum activer la broche Numérique %n en mode %m.pinMode', 'pinMode', '1', '2', '1. entrée'],
-            [' ', "sur C%m.bdNum mettre l'état logique de la broche Digital %n à %m.onOff ", 'digitalWrite', '1', '2', 'faux / bas'],
+            [' ', "sur C%m.bdNum mettre l'état logique de la broche Numérique%n à %m.onOff ", 'digitalWrite', '1', '2', 'faux / bas'],
 			[' '],
             [' ', 'sur C%m.bdNum écrire sur la broche PWM~ %n la valeur %n', 'analogWrite', '1', '3', '128'],
 			[' '],
@@ -722,15 +722,15 @@ new (function () {
             [' ', 'niveau de débogage : %m.dbgLevel', 'setDebugLevel', '0'],
 			[' '],
 			[' '],
-            [' ', 'sur C%m.bdNum activer un moteur pas-à-pas 4 fils sur les broches %n   %n   %n   %n avec une rotation de %n pas par tour', 'fourWireStepperPins', '1', '8', '9', '10', '11', '500'],
+            [' ', 'sur C%m.bdNum activer un moteur pas-à-pas sur les broches %n   %n   %n   %n avec une rotation de %n pas par tour', 'fourWireStepperPins', '1', '8', '9', '10', '11', '500'],
             [' ', 'sur C%m.bdNum activer la carte de moteur pas-à-pas pour la broche %n, dans la direction %n à raison de %n pas par tour', 'stepperDriverPins', '1', '8', '9', 500],
             [' ', 'sur C%m.bdNum faire tourner le moteur pas-à-pas sur la broche %n : %n tr/mn, direction %m.motorDirection , accélération : %n , décélération : %n pour un nb de pas : %n',
                 'moveStepper', '1', '8', '180', '1. avant', '1600', '1600', '2000'],
             [' ', 'sur C%m.bdNum arrêter le moteur pas-à-pas de la broche %n !', 'stopStepper', '1', '8'],
 			[' '],
 			[' '],
-            ['r', "sur C%m.bdNum l'état logique de la broche Digital %n", 'getDigitalInputData', '1', '2'],
-            ['r', 'sur C%m.bdNum la valeur lue sur la broche analogique A %n', 'getAnalogSensorData', '1', '2'],
+            ['r', "sur C%m.bdNum l'état logique de la broche Numérique %n", 'getDigitalInputData', '1', '2'],
+            ['r', 'sur C%m.bdNum la valeur lue sur la broche Analogique A %n', 'getAnalogSensorData', '1', '2'],
             ['r', 'sur C%m.bdNum la distance mesurée en %m.distance par le capteur Infra-Rouge de la broche %n', 'getInfraredDistanceData', '1', '1. cm', '2'],
             ['r', 'sur C%m.bdNum la distance mesurée en %m.distance par le Sonar de la broche %n', 'getSonarData', '1', '1. cm', '2']
 

@@ -53,7 +53,6 @@ ECHO inspire de Node.js Portable v1.7
 ECHO https://github.com/crazy-max/nodejs-portable
 ECHO.
 ECHO Attention, l'installation va se faire dans le dossier courant.
-ECHO Etes-vous bien connecté à Internet ?
 ECHO.
 ECHO 1 - Installation de node.js
 ECHO 2 - Installation des modules
