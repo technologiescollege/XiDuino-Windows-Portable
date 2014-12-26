@@ -8,6 +8,8 @@ Xi permet de simultanément connecter, contrôler et surveiller plusieurs cartes
 
 
 _Source_ : [MrYsLab/xi](https://github.com/MrYsLab/xi)
+Mais ça va plus loin car on peut mettre plusieurs cartes sur un même poste, comander plsuieurs cartes sur plusieurs postes, ou seulement par le réseau, tout est possible !
+![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/diapo_globale.JPG)
 ![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/Exemple_2_arduino_1_PC.JPG)
 
 ## Version francisée et portable
