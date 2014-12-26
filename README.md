@@ -15,8 +15,7 @@ _Source_ : [MrYsLab/xi](https://github.com/MrYsLab/xi)
 Le but de ce clone du projet initial est de permettre de disposer :
 - d'une version dont tous les textes sont francisés, même les messages d'erreur des scripts ;
 - d'une version portable sous Windows afin de ne pas avoir à installer les pré-requis, ceux-ci étant fonctionnels dans le sous-dossier "nodejs" du dossier "xiduino_windows_portable" ;
-- d'un lanceur graphique utilisable par des enfants :
-![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/Capture_EXE.JPG)
+- d'un lanceur graphique utilisable par des enfants.
 
 _La documentation pour l'installation et l'utilisation de Xi sont fournies dans le dossier "aide"._
 
@@ -24,8 +23,7 @@ _La documentation pour l'installation et l'utilisation de Xi sont fournies dans 
 
 ## Avec une interface graphique
 
-![ScreenShot](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/documentation/Capture_EXE.JPG)
-
+![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/Capture_EXE.JPG)
 ### Limites connues à ce jour imposées par l'équipe de développement de Scratch :
 1. **Xi ne fonctionne que** sur la version en ligne de Scratch2.0
 2. Les projets faits en utilisant Xi ne peuvent pas être sauvegardés sur votre compte en ligne
