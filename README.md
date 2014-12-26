@@ -1,9 +1,8 @@
 Xi
 ======
-ou comment inter-connecter nos micro-contrôleurs modernes.
+ou comment inter-connecter nos micro-contrôleurs modernes.![ScreenShot](https://raw.github.com/MrYsLab/Xi/master/documentation/XiLogo.png)
 
-![ScreenShot](https://raw.github.com/MrYsLab/Xi/master/documentation/XiLogo.png)
-
+![](/https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/0-presentation/Screenshot%20-%2008192014%20-%2003-20-36%20PM.png)
 Xi permet de simultanément connecter, contrôler et surveiller plusieurs cartes Arduino, BeagleBone Black et Raspberry Pi par le biais de Scratch 2.0 comme interface graphique globale.
 
 _Source_ : [MrYsLab/xi](https://github.com/MrYsLab/xi)
