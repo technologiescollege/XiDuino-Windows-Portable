@@ -26,6 +26,7 @@ TIniFile *INI = new TIniFile(ExtractFilePath(Application->ExeName)+ "xi.ini");
 //listes pour récupérer le contenu du fichier INI
 int xi_port=666;
 int xi_com=69;
+int choix_langue;
 AnsiString locate_scratch2="Scratch 2.exe";
 AnsiString locate_librairie;
 AnsiString locate_project;
@@ -46,6 +47,7 @@ void __fastcall TInterfaceXi::InitINI()
   //écriture dans le fichier INI des variables utiles
   INI->WriteInteger("port COM", "xi_com", 3);      //port par défaut pour initialiser
   INI->WriteInteger("port serveur", "xi_port", 1234);      //port par défaut pour initialiser
+  INI->WriteInteger("langue", "langue", 0); //dans le fichier label.xml, à la balise <Langues>, cela correspond au n° du rang de la langue
   INI->WriteString("locate Scratch2", "locate_scratch2", "Scratch 2.exe"); //chemin par défaut pour initialiser
   //dossiers à utiliser pour les documents
   INI->WriteString("locate Librairie", "locate_librairie", ExtractFilePath(Application->ExeName) + "bibliotheque\\"); //chemin par défaut pour initialiser
@@ -62,6 +64,7 @@ __fastcall TInterfaceXi::TInterfaceXi(TComponent* Owner)
   //lecture du fichier INI
   xi_port=INI->ReadInteger("port serveur","xi_port",1234);
   xi_com=INI->ReadInteger("port COM","xi_com",4);
+  choix_langue=INI->ReadInteger("langue", "langue", 0);
   locate_scratch2=INI->ReadString("locate Scratch2", "locate_scratch2", "Scratch 2.exe");
   locate_librairie=INI->ReadString("locate Librairie", "locate_librairie", ExtractFilePath(Application->ExeName) + "bibliotheque\\");
   locate_project=INI->ReadString("locate Project", "locate_project", ExtractFilePath(Application->ExeName) + "projets\\");
@@ -91,6 +94,8 @@ __fastcall TInterfaceXi::TInterfaceXi(TComponent* Owner)
   AnsiString file = ExtractFilePath(Application->ExeName) + "label.xml";
   langue = new GestionLangue;
   langue->Init(InterfaceXi->Langues,file.c_str(),(ptrOnClick)&LanguesClick);
+  //après l'initialisation des langues, le système pioche la langue précédemment sélectionnée
+  langue->Change(choix_langue);
 
 	InterfaceXi->AutoSize=true;
 	ListBox1->Visible=false;
@@ -136,7 +141,7 @@ void __fastcall TInterfaceXi::SearchEx(AnsiString FilePath, TStringList * Extens
 void __fastcall TInterfaceXi::ExempleClick(TObject *Sender)
 {
 AnsiString CheminNomFichier;
-ofstream fichier_s2("scratch_ex.bat", ios::out | ios::trunc);  // ouverture en écriture avec effacement du fichier ouvert
+ofstream fichier_s2("scratch2.bat", ios::out | ios::trunc);  // ouverture en écriture avec effacement du fichier ouvert
 		if(fichier_s2)
 		{
 			   //récupération des infos de l'entrée TMenu qui a déclenché cette fonction
@@ -145,7 +150,7 @@ ofstream fichier_s2("scratch_ex.bat", ios::out | ios::trunc);  // ouverture en é
 			   fichier_s2.close();
 		}
 		else ShowMessage("Le fichier scratch2.bat n'existe pas.");
-ShellExecute(0, 0, "scratch_ex.bat", 0, 0 , SW_HIDE );
+ShellExecute(0, 0, "scratch2.bat", 0, 0 , SW_HIDE );
 }
 //-------------------------recherche des fichiers de docs pour les lister dans les menus Aide & Documentation---------------
 void __fastcall TInterfaceXi::SearchDocs(AnsiString FilePath, TStringList * Extensions, TStrings * ListeFichiers, int RangMenu)
@@ -377,6 +382,7 @@ Edit2->Text=IntToStr(xi_port);
 
 void __fastcall TInterfaceXi::LanguesClick(TObject *Sender)
 {
+INI->WriteInteger("langue", "langue", ((TMenuItem*)Sender)->Tag);
 langue->Change(((TMenuItem*)Sender)->Tag);
 }
 //---------------------------------------------------------------------------

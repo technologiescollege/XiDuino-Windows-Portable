@@ -13347,21 +13347,21 @@ object InterfaceXi: TInterfaceXi
   object Label8: TLabel
     Left = 0
     Top = 0
-    Width = 8
+    Width = 5
     Height = 22
   end
   object Label9: TLabel
     Left = 490
     Top = 264
-    Width = 8
+    Width = 5
     Height = 22
     Transparent = True
   end
   object Label10: TLabel
     Left = 416
     Top = 320
-    Width = 41
-    Height = 12
+    Width = 5
+    Height = 22
     Transparent = True
   end
   object Label11: TLabel
