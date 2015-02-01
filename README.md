@@ -24,7 +24,7 @@ Le but de ce clone du projet initial est de permettre de disposer :
 - d'un lanceur graphique utilisable par des enfants.
 
 _Portable and French-adapted version_
-_The aim of this initial schem clone is to enable to have at your disposal:
+_The aim of this initial scheme clone is to enable to have at your disposal:
 - a version whose texts are adapted into French, even the messages of scrip-written mistakes;
 - a portable version under Windows so as not to be obliged to install the prerequisites, as they work in the subfile "nodejs" of the file "xiduino_windows_portable"; 
 - a graphic activation that can be used by children.
