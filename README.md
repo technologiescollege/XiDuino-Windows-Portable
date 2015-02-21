@@ -15,7 +15,7 @@ _Source_ : [MrYsLab/xi](https://github.com/MrYsLab/xi)
 
 **Mais ça va plus loin car on peut mettre plusieurs cartes sur un même poste, comander plsuieurs cartes sur plusieurs postes, ou seulement par le réseau, tout est possible !**
 
-_ But it goes even further as we can put several cards on a same station, command several cards on various stations, or only by the network, everything is possible._
+**_But it goes even further as we can put several cards on a same station, command several cards on various stations, or only by the network, everything is possible._**
 
 ![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/diapo_globale.JPG)
 ![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/Exemple_2_arduino_1_PC.JPG)
