@@ -51,7 +51,9 @@ _With a graphic interface_
 2. Les projets faits en utilisant Xi ne peuvent pas être sauvegardés sur votre compte en ligne
 
 **_The limits known imposed by the team of the development of Scratch:_**
+
 _1. **Xi only works on the on-line version** of Scratch2.0_
+
 _2. The projects made using Xi cannot be saved on your online account._ 
 
 
