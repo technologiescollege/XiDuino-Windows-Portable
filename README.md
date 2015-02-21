@@ -6,7 +6,7 @@ _**How to inter-connect our modern micro-controllers.**_
 
 Xi permet de simultanément connecter, contrôler et surveiller **plusieurs** cartes Arduino, BeagleBone Black et Raspberry Pi par le biais de Scratch 2.0 comme interface graphique globale.
 
-_Xi enables to connect, control and supervise simultaneously several Arduino cards, BeagleBone Black and Raspberry Pi thanks to Scratch 2.O as a global graphic interface._
+_Xi enables to connect, control and supervise simultaneously several Arduino cards, BeagleBone Black and Raspberry Pi thanks to Scratch 2.0 as a global graphic interface._
 
 ![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/0-presentation/Screenshot%20-%2008192014%20-%2003-20-36%20PM.png)
 
@@ -14,7 +14,9 @@ _Xi enables to connect, control and supervise simultaneously several Arduino car
 _Source_ : [MrYsLab/xi](https://github.com/MrYsLab/xi)
 
 **Mais ça va plus loin car on peut mettre plusieurs cartes sur un même poste, comander plsuieurs cartes sur plusieurs postes, ou seulement par le réseau, tout est possible !**
+
 _ But it goes even further as we can put several cards on a same station, command several cards on various stations, or only by the network, everything is possible._
+
 ![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/diapo_globale.JPG)
 ![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/Exemple_2_arduino_1_PC.JPG)
 
