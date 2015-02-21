@@ -42,7 +42,7 @@ _The documentation for the setup and use of Xi are available in the folder "aide
 _Warning: This documentation is in constant evolution as the s2a/Xi creator, Alan Yorinks, is still making his projects evolve. Although perfectly functional, when a final version will be on line, I will translate its documentation._
 
 ## Avec une interface graphique
-_ With a graphic interface
+_ With a graphic interface_
 
 ![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/Capture_EXE.JPG)
 
