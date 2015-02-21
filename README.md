@@ -1,6 +1,6 @@
 Xi
 ======
-![ScreenShot](https://raw.github.com/MrYsLab/Xi/master/documentation/XiLogo.png)ou comment inter-connecter nos micro-contrôleurs modernes.
+![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/0-presentation/Xi.png) ou comment inter-connecter nos micro-contrôleurs modernes.
 
 _How to inter-connect our modern micro-controllers._
 
