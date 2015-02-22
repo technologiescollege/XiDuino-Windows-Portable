@@ -30,7 +30,9 @@ Le but de ce clone du projet initial est de permettre de disposer :
 _Portable version_
 
 _The aim of this clone is to have at your disposal:_
+
 _- a portable version for Windows so as not to be obliged to install the prerequisites, as they work in the subfile "nodejs" of the file "xiduinowindowsportable";_
+
 _- a graphic use that can be used by children._
 
 La documentation pour l'installation et l'utilisation de Xi sont fournies dans le dossier "aide".
