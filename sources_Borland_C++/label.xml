@@ -34,7 +34,7 @@
     <Label3 type="TLabel">
       <Caption>
         <FR>au port d'écoute</FR>
-        <EN>and XiServer is on #</EN>
+        <EN>XiServer is on #</EN>
       </Caption>
     </Label3>
     <Label4 type="TLabel">
@@ -145,6 +145,24 @@
 				<EN>&Locate Scratch2</EN>
 			  </Caption>
 			</Ouvrir>
+			<Localiserledossierbibliothque1 type="TMenuItem">
+			  <Caption>
+				<FR>Localiser le dossier 'bibliothèque'</FR>
+				<EN>Locate folder 'librairie'</EN>
+			  </Caption>
+			</Localiserledossierbibliothque1>
+			<Localiserledossierprojets1 type="TMenuItem">
+			  <Caption>
+				<FR>Localiser le dossier 'projets'</FR>
+				<EN>Locate folder 'project'</EN>
+			  </Caption>
+			</Localiserledossierprojets1>
+			<Localiserledossierdocumentation1 type="TMenuItem">
+			  <Caption>
+				<FR>Localiser le dossier 'documentation'</FR>
+				<EN>Locate folder 'documentation'</EN>
+			  </Caption>
+			</Localiserledossierdocumentation1>
 			<nodejs type="TMenuItem">
 			  <Caption>
 				<FR>Installer &node.js sur ce poste</FR>
@@ -223,6 +241,18 @@
 				<EN>Xi official site</EN>
 			  </Caption>
 			</SiteofficieldeXi>
+			<SiteofficielArduino1 type="TMenuItem">
+			  <Caption>
+				<FR>Site officiel Arduino</FR>
+				<EN>Arduino official site</EN>
+			  </Caption>
+			</SiteofficielArduino1>
+			<lchargerlesdrivers1 type="TMenuItem">
+			  <Caption>
+				<FR>Télécharger les drivers</FR>
+				<EN>Download Arduino drivers</EN>
+			  </Caption>
+			</lchargerlesdrivers1>
 			<Apropos1 type="TMenuItem">
 			  <Caption>
 				<FR>A propos</FR>

@@ -70,6 +70,13 @@ __published:	// Composants gérés par l'EDI
 	TLabel *Label9;
 	TLabel *Label10;
 	TLabel *Label11;
+	TMenuItem *N7;
+	TMenuItem *Localiserledossierbibliothque1;
+	TMenuItem *Localiserledossierprojets1;
+	TMenuItem *Localiserledossierdocumentation1;
+	TMenuItem *SiteofficielArduino1;
+	TMenuItem *lchargerlesdrivers1;
+	TOpenDialog *OpenDialog;
 	void __fastcall A_proposClick(TObject *Sender);
 	void __fastcall AllerplusloinBlocklyDuino1Click(TObject *Sender);
 	void __fastcall PrparerArduino1Click(TObject *Sender);
@@ -96,6 +103,11 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall InitClick(TObject *Sender);
 	void __fastcall Gestionnairedepriphriques1Click(TObject *Sender);
 	void __fastcall N4Principesdeprogrammation1Click(TObject *Sender);
+	void __fastcall SiteofficielArduino1Click(TObject *Sender);
+	void __fastcall lchargerlesdrivers1Click(TObject *Sender);
+	void __fastcall Localiserledossierbibliothque1Click(TObject *Sender);
+	void __fastcall Localiserledossierprojets1Click(TObject *Sender);
+	void __fastcall Localiserledossierdocumentation1Click(TObject *Sender);
 private:	// Déclarations de l'utilisateur
 	TLabel * interLabel ;
 	TButton * interButton ;

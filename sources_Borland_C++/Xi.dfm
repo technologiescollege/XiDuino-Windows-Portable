@@ -13492,10 +13492,25 @@ object InterfaceXi: TInterfaceXi
         Caption = 'Gestionnaire de p'#233'riph'#233'riques'
         OnClick = Gestionnairedepriphriques1Click
       end
+      object N7: TMenuItem
+        Caption = '-'
+      end
       object Ouvrir: TMenuItem
         Caption = '&Localiser Scratch 2'
         Hint = 'Parcourrir le disque dur pour la version hors ligne de Scratch2'
         OnClick = OuvrirClick
+      end
+      object Localiserledossierbibliothque1: TMenuItem
+        Caption = 'Localiser le dossier '#39'biblioth'#232'que'#39
+        OnClick = Localiserledossierbibliothque1Click
+      end
+      object Localiserledossierprojets1: TMenuItem
+        Caption = 'Localiser le dossier '#39'projets'#39
+        OnClick = Localiserledossierprojets1Click
+      end
+      object Localiserledossierdocumentation1: TMenuItem
+        Caption = 'Localiser le dossier '#39'documentation'#39
+        OnClick = Localiserledossierdocumentation1Click
       end
       object N5: TMenuItem
         Caption = '-'
@@ -13562,6 +13577,14 @@ object InterfaceXi: TInterfaceXi
         Caption = 'Site officiel de Xi'
         OnClick = SiteofficieldeXiClick
       end
+      object SiteofficielArduino1: TMenuItem
+        Caption = 'Site officiel Arduino'
+        OnClick = SiteofficielArduino1Click
+      end
+      object lchargerlesdrivers1: TMenuItem
+        Caption = 'T'#233'l'#233'charger les drivers'
+        OnClick = lchargerlesdrivers1Click
+      end
       object N1: TMenuItem
         Caption = '-'
       end
@@ -13577,5 +13600,9 @@ object InterfaceXi: TInterfaceXi
     Options = [ofHideReadOnly, ofNoChangeDir, ofFileMustExist, ofEnableSizing]
     Left = 696
     Top = 24
+  end
+  object OpenDialog: TOpenDialog
+    Left = 696
+    Top = 112
   end
 end

@@ -306,7 +306,7 @@ if (Key < '0' || Key >'9')
 
 void __fastcall TInterfaceXi::Apropos1Click(TObject *Sender)
 {
-ShowMessage("Interface réalisée par Sébastien Canet, décembre 2014.\nv2.0");
+ShowMessage("Interface réalisée par Sébastien Canet, décembre 2014.\nv2.1");
 }
 //---------------------------------------------------------------------------
 
@@ -390,6 +390,44 @@ langue->Change(((TMenuItem*)Sender)->Tag);
 void __fastcall TInterfaceXi::Gestionnairedepriphriques1Click(TObject *Sender)
 {
 ShellExecute(0, 0, "devmgmt.msc", 0, 0 , SW_HIDE );	
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TInterfaceXi::SiteofficielArduino1Click(TObject *Sender)
+{
+ShellExecute(0, 0, "http://arduino.cc/en/Main/Software", 0, 0 , SW_SHOW );
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TInterfaceXi::lchargerlesdrivers1Click(TObject *Sender)
+{
+ShellExecute(0, 0, "https://github.com/technologiescollege/drivers", 0, 0 , SW_SHOW );
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TInterfaceXi::Localiserledossierbibliothque1Click(
+      TObject *Sender)
+{
+if (OpenDialog->Execute()==true) locate_librairie=ExtractFilePath(OpenDialog->FileName);
+//écriture dans le fichier INI
+INI->WriteString("locate Librairie", "locate_librairie", locate_librairie);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TInterfaceXi::Localiserledossierprojets1Click(TObject *Sender)
+{
+if (OpenDialog->Execute()==true) locate_project=ExtractFilePath(OpenDialog->FileName);
+//écriture dans le fichier INI
+INI->WriteString("locate Project", "locate_project", locate_project);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TInterfaceXi::Localiserledossierdocumentation1Click(
+      TObject *Sender)
+{
+if (OpenDialog->Execute()==true) locate_doc=ExtractFilePath(OpenDialog->FileName);
+//écriture dans le fichier INI
+INI->WriteString("locate Documentation", "locate_doc", locate_doc);
 }
 //---------------------------------------------------------------------------
 
