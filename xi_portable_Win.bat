@@ -4,4 +4,4 @@ rem fichiers BAT et fork créés par Sébastien CANET
 cls
 SET currentpath=%~dp1
 cd %currentpath%
-start .\nodejs\node.exe xiserver.js ard null 0 COM4 1233
+start .\nodejs\node.exe xiserver.js ard null 0 COM3 1234
