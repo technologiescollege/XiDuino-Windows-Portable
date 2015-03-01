@@ -1,5 +1,6 @@
 Xi
 ======
+International : FR / EN / ES
 ![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/0-presentation/Xi.png) ou comment inter-connecter nos micro-contrôleurs modernes.
 
 _**How to inter-connect our modern micro-controllers.**_
@@ -13,7 +14,7 @@ _Xi enables to connect, control and supervise simultaneously several Arduino car
 
 _Source_ : [MrYsLab/xi](https://github.com/MrYsLab/xi)
 
-**Mais ça va plus loin car on peut mettre plusieurs cartes sur un même poste, comander plsuieurs cartes sur plusieurs postes, ou seulement par le réseau, tout est possible !**
+**Mais ça va plus loin car on peut mettre plusieurs cartes sur un même poste, commander plusieurs cartes sur plusieurs postes, ou seulement par le réseau, tout est possible !**
 
 **_But it goes even further: we can put several cards on a same station, command several cards on various stations, or only by the network, everything is possible._**
 
@@ -57,5 +58,3 @@ _With a graphic interface_
 _1. **Xi only works on the on-line version** of Scratch2.0_
 
 _2. The projects made using Xi cannot be saved on your online account._ 
-
-
