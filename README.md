@@ -1,6 +1,7 @@
 Xi
 ======
 International : FR / EN / ES
+
 ![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/0-presentation/Xi.png) ou comment inter-connecter nos micro-contrôleurs modernes.
 
 _**How to inter-connect our modern micro-controllers.**_
