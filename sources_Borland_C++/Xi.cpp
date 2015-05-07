@@ -103,6 +103,7 @@ __fastcall TInterfaceXi::TInterfaceXi(TComponent* Owner)
 	Label9->Visible=true;
 	Label10->Visible=true;
 	Label11->Visible=false;
+
 }
 
 
@@ -149,7 +150,7 @@ ofstream fichier_s2("scratch2.bat", ios::out | ios::trunc);  // ouverture en écr
 			   fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\ncls\nSET currentpath=%~dp1\nSET dossier_scratch="<< '"' << locate_scratch2.c_str() << '"'<< "\nstart %dossier_scratch% " << '"' << CheminNomFichier.c_str() << '"';
 			   fichier_s2.close();
 		}
-		else ShowMessage("Le fichier scratch2.bat n'existe pas.");
+		else ShowMessage(Popup->Items->Strings[0]);
 ShellExecute(0, 0, "scratch2.bat", 0, 0 , SW_HIDE );
 }
 //-------------------------recherche des fichiers de docs pour les lister dans les menus Aide & Documentation---------------
@@ -194,7 +195,7 @@ ShellExecute(0, 0, CheminNomFichier.c_str(), 0, 0 , SW_HIDE );
 //---------------------------------------------------------------------------
 void __fastcall TInterfaceXi::A_proposClick(TObject *Sender)
 {
-ShellExecute(0, 0, "https://github.com/technologiescollege/xi", 0, 0 , SW_SHOW );
+ShellExecute(0, 0, "https://github.com/technologiescollege/XiDuino-Windows-Portable", 0, 0 , SW_SHOW );
 }
 //---------------------------------------------------------------------------
 void __fastcall TInterfaceXi::SiteofficieldeXiClick(TObject *Sender)
@@ -204,7 +205,7 @@ ShellExecute(0, 0, "http://mryslab.blogspot.fr/", 0, 0 , SW_SHOW );
 //---------------------------------------------------------------------------
 void __fastcall TInterfaceXi::AllerplusloinBlocklyDuino1Click(TObject *Sender)
 {
-ShellExecute(0, 0, "http://www.technologiescollege.fr/blocklyduino", 0, 0 , SW_SHOW );
+ShellExecute(0, 0, "http://www.technologiescollege.fr/blockly@rduino/", 0, 0 , SW_SHOW );
 }
 //---------------------------------------------------------------------------
 void __fastcall TInterfaceXi::Diaporamadeprsenation1Click(TObject *Sender)
@@ -250,7 +251,7 @@ ofstream fichier_s2("scratch2.bat", ios::out | ios::trunc);  // ouverture en écr
 				fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\ncls\nSET currentpath=%~dp1\nSET dossier_scratch="<< '"' << locate_scratch2.c_str() << '"'<< "\nstart %dossier_scratch% %currentpath%bibliotheque\\fichier_depart_Xi.sb2";
 				fichier_s2.close();
 		}
-		else ShowMessage("Le fichier scratch2.bat n'existe pas.");
+		else ShowMessage(Popup->Items->Strings[1]);
 ShellExecute(0, 0, "scratch2.bat", 0, 0 , SW_HIDE );
 }
 //---------------------------------------------------------------------------
@@ -266,7 +267,7 @@ ofstream fichier_s2a("xi_portable_Win.bat", ios::out | ios::trunc);  // ouvertur
 				fichier_s2a << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\ncls\nSET currentpath=%~dp1\ncd %currentpath%\nstart .\\nodejs\\node.exe xiserver.js ard null 0 COM" << xi_com << " " << xi_port;
 				fichier_s2a.close();
 		}
-		else ShowMessage("Le fichier xi_portable_Win.bat n'existe pas.");
+		else ShowMessage(Popup->Items->Strings[2]);
 ShellExecute(0, 0, "xi_portable_Win.bat", 0, 0 , SW_HIDE );
 }
 //---------------------------------------------------------------------------
@@ -287,7 +288,7 @@ void __fastcall TInterfaceXi::Edit1KeyPress(TObject *Sender, char &Key)
 {
   if (Key < '0' || Key >'9')
 	{
-	ShowMessage("Le numéro du port COM doit être un entier.");
+	ShowMessage(Popup->Items->Strings[3]);
 	Key=NULL;
 	}
 }
@@ -298,7 +299,7 @@ void __fastcall TInterfaceXi::Edit2KeyPress(TObject *Sender, char &Key)
 //vérifie si chaque touche pressée est bien un chiffre
 if (Key < '0' || Key >'9')
 	{
-	ShowMessage("Le numéro du port d'écoute doit être un entier\ncompris entre 0~65535.");
+	ShowMessage(Popup->Items->Strings[4]);
 	Key=NULL;
 	}
 }
@@ -306,7 +307,7 @@ if (Key < '0' || Key >'9')
 
 void __fastcall TInterfaceXi::Apropos1Click(TObject *Sender)
 {
-ShowMessage("Interface réalisée par Sébastien Canet, décembre 2014.\nv2.1");
+ShowMessage(Popup->Items->Strings[5]);
 }
 //---------------------------------------------------------------------------
 
@@ -329,13 +330,13 @@ if (cachIP==true)
 	ListBox1->Visible=false;
 	Label7->Visible=false;
 	Label11->Visible=false;
-	AfficherladresseIPduposte1->Caption = "Afficher l'adresse IP du poste";
+	AfficherladresseIPduposte1->Caption = Popup->Items->Strings[6];
 	}
 	else {
 			//InterfaceXi->ClientWidth=670;
 			//InterfaceXi->Constraints->MinWidth=670;
 			//InterfaceXi->Constraints->MaxWidth=670;
-			AfficherladresseIPduposte1->Caption = "Cacher l'adresse IP du poste";
+			AfficherladresseIPduposte1->Caption = Popup->Items->Strings[7];
 			cachIP=true;
 			ListBox1->Visible=true;
 			Label7->Visible=true;

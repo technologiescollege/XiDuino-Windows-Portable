@@ -77,6 +77,7 @@ __published:	// Composants gérés par l'EDI
 	TMenuItem *SiteofficielArduino1;
 	TMenuItem *lchargerlesdrivers1;
 	TOpenDialog *OpenDialog;
+	TComboBox *Popup;
 	void __fastcall A_proposClick(TObject *Sender);
 	void __fastcall AllerplusloinBlocklyDuino1Click(TObject *Sender);
 	void __fastcall PrparerArduino1Click(TObject *Sender);

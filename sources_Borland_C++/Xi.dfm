@@ -1,9 +1,10 @@
 object InterfaceXi: TInterfaceXi
   Left = 0
   Top = 0
+  AutoSize = True
   Caption = 'XiDuino : connexion Scratch2 - Arduino'
-  ClientHeight = 525
-  ClientWidth = 790
+  ClientHeight = 344
+  ClientWidth = 929
   Color = clWindow
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11581,8 +11582,8 @@ object InterfaceXi: TInterfaceXi
   PixelsPerInch = 96
   TextHeight = 22
   object Image1: TImage
-    Left = 278
-    Top = 178
+    Left = 286
+    Top = 182
     Width = 139
     Height = 154
     Picture.Data = {
@@ -11904,7 +11905,7 @@ object InterfaceXi: TInterfaceXi
     Proportional = True
   end
   object Image2: TImage
-    Left = 262
+    Left = 270
     Top = 28
     Width = 175
     Height = 144
@@ -13358,10 +13359,11 @@ object InterfaceXi: TInterfaceXi
     Transparent = True
   end
   object Label10: TLabel
-    Left = 416
-    Top = 320
+    Left = 516
+    Top = 322
     Width = 5
     Height = 22
+    Caption = ' '
     Transparent = True
   end
   object Label11: TLabel
@@ -13450,8 +13452,8 @@ object InterfaceXi: TInterfaceXi
     OnKeyPress = Edit2KeyPress
   end
   object ListBox1: TListBox
-    Left = 451
-    Top = 32
+    Left = 447
+    Top = 24
     Width = 202
     Height = 300
     Font.Charset = DEFAULT_CHARSET
@@ -13462,6 +13464,30 @@ object InterfaceXi: TInterfaceXi
     ItemHeight = 27
     ParentFont = False
     TabOrder = 5
+  end
+  object Popup: TComboBox
+    Left = 784
+    Top = 272
+    Width = 145
+    Height = 30
+    Enabled = False
+    ItemHeight = 22
+    TabOrder = 6
+    Text = 'Popup'
+    Visible = False
+    Items.Strings = (
+      'Le fichier scratch2.bat n'#39'existe pas.'
+      'Le fichier scratch2.bat n'#39'existe pas.'
+      'Le fichier xi_portable_Win.bat n'#39'existe pas.'
+      'Le num'#233'ro du port COM doit '#234'tre un entier.'
+      
+        'Le num'#233'ro du port d'#39#233'coute doit '#234'tre un entier compris entre 0~6' +
+        '5535.'
+      
+        'Interface r'#233'alis'#233'e par S'#233'bastien Canet, d'#233'cembre 2015 - v2.1.1 -' +
+        ' mai 2015'
+      'Afficher l'#39'adresse IP du poste'
+      'Cacher l'#39'adresse IP du poste')
   end
   object MainMenu1: TMainMenu
     Left = 696
