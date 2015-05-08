@@ -2,7 +2,7 @@ Xi
 ======
 International : FR / EN / ES
 
-![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/0-presentation/Xi.png) ou comment inter-connecter nos micro-contrôleurs modernes.
+![](https://raw.githubusercontent.com/technologiescollege/XiDuino-Windows-Portable/master/aide/0-presentation/Xi.png) ou comment inter-connecter nos micro-contrôleurs modernes.
 
 _**How to inter-connect our modern micro-controllers.**_
 
@@ -10,7 +10,7 @@ Xi permet de simultanément connecter, contrôler et surveiller **plusieurs** ca
 
 _Xi enables to connect, control and supervise simultaneously several Arduino cards, BeagleBone Black and Raspberry Pi thanks to Scratch 2.0 as a global graphic interface._
 
-![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/0-presentation/Screenshot%20-%2008192014%20-%2003-20-36%20PM.png)
+![](https://raw.githubusercontent.com/technologiescollege/XiDuino-Windows-Portable/master/aide/0-presentation/Screenshot%20-%2008192014%20-%2003-20-36%20PM.png)
 
 
 _Source_ : [MrYsLab/xi](https://github.com/MrYsLab/xi)
