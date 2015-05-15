@@ -13484,7 +13484,7 @@ object InterfaceXi: TInterfaceXi
         'Le num'#233'ro du port d'#39#233'coute doit '#234'tre un entier compris entre 0~6' +
         '5535.'
       
-        'Interface r'#233'alis'#233'e par S'#233'bastien Canet, d'#233'cembre 2015 - v2.1.1 -' +
+        'Interface r'#233'alis'#233'e par S'#233'bastien Canet, d'#233'cembre 2015 - v2.2.1 -' +
         ' mai 2015'
       'Afficher l'#39'adresse IP du poste'
       'Cacher l'#39'adresse IP du poste')
@@ -13510,35 +13510,33 @@ object InterfaceXi: TInterfaceXi
     end
     object Outils1: TMenuItem
       Caption = '&Outils'
-      object AfficherladresseIPduposte1: TMenuItem
-        Caption = 'Afficher l'#39'adresse IP du poste'
-        OnClick = AfficherladresseIPduposte1Click
-      end
       object Gestionnairedepriphriques1: TMenuItem
         Caption = 'Gestionnaire de p'#233'riph'#233'riques'
         OnClick = Gestionnairedepriphriques1Click
       end
+      object InstallDrivers: TMenuItem
+        Caption = 'Installer les pilotes'
+        object w32: TMenuItem
+          Caption = 'Windows 32bits x86'
+          OnClick = w32Click
+        end
+        object w64: TMenuItem
+          Caption = 'Windows 64bits x64'
+          OnClick = w64Click
+        end
+      end
+      object Upload: TMenuItem
+        Caption = 'T'#233'l'#233'verser '#39'Firmata'#39' dans une carte'
+        object Firmata_Uno: TMenuItem
+          Caption = 'Arduino Uno'
+          OnClick = Firmata_UnoClick
+        end
+        object Firmata_Mega: TMenuItem
+          Caption = 'Arduino Mega'
+          OnClick = Firmata_MegaClick
+        end
+      end
       object N7: TMenuItem
-        Caption = '-'
-      end
-      object Ouvrir: TMenuItem
-        Caption = '&Localiser Scratch 2'
-        Hint = 'Parcourrir le disque dur pour la version hors ligne de Scratch2'
-        OnClick = OuvrirClick
-      end
-      object Localiserledossierbibliothque1: TMenuItem
-        Caption = 'Localiser le dossier '#39'biblioth'#232'que'#39
-        OnClick = Localiserledossierbibliothque1Click
-      end
-      object Localiserledossierprojets1: TMenuItem
-        Caption = 'Localiser le dossier '#39'projets'#39
-        OnClick = Localiserledossierprojets1Click
-      end
-      object Localiserledossierdocumentation1: TMenuItem
-        Caption = 'Localiser le dossier '#39'documentation'#39
-        OnClick = Localiserledossierdocumentation1Click
-      end
-      object N5: TMenuItem
         Caption = '-'
       end
       object nodejs: TMenuItem
@@ -13548,17 +13546,51 @@ object InterfaceXi: TInterfaceXi
       object N6: TMenuItem
         Caption = '-'
       end
+      object Locate: TMenuItem
+        Caption = 'Localiser les dossiers'
+        object Ouvrir: TMenuItem
+          Caption = '&Localiser Scratch 2'
+          Hint = 'Parcourrir le disque dur pour la version hors ligne de Scratch2'
+          OnClick = OuvrirClick
+        end
+        object Localiserledossierbibliothque1: TMenuItem
+          Caption = 'Localiser le dossier '#39'biblioth'#232'que'#39
+          OnClick = Localiserledossierbibliothque1Click
+        end
+        object Localiserledossierdocumentation1: TMenuItem
+          Caption = 'Localiser le dossier '#39'documentation'#39
+          OnClick = Localiserledossierdocumentation1Click
+        end
+        object Localiserledossierprojets1: TMenuItem
+          Caption = 'Localiser le dossier '#39'projets'#39
+          OnClick = Localiserledossierprojets1Click
+        end
+        object N9: TMenuItem
+          Caption = '-'
+        end
+        object Drivers: TMenuItem
+          Caption = 'Ouvrir le dossier '#39'pilotes'#39
+          OnClick = DriversClick
+        end
+      end
       object Init: TMenuItem
         Caption = 'R'#233'initialiser les param'#232'tres'
         OnClick = InitClick
+      end
+      object N5: TMenuItem
+        Caption = '-'
+      end
+      object AfficherladresseIPduposte1: TMenuItem
+        Caption = 'Afficher l'#39'adresse IP du poste'
+        OnClick = AfficherladresseIPduposte1Click
       end
     end
     object Documentation1: TMenuItem
       Caption = '&Documentation'
     end
-    object AllerplusloinBlocklyDuino1: TMenuItem
-      Caption = 'Aller plus loin avec &BlocklyDuino'
-      OnClick = AllerplusloinBlocklyDuino1Click
+    object BlocklyArduino: TMenuItem
+      Caption = 'Aller plus loin avec &Blockly@rduino'
+      OnClick = BlocklyArduinoClick
     end
     object Langues: TMenuItem
       Caption = 'Langues'
@@ -13588,28 +13620,34 @@ object InterfaceXi: TInterfaceXi
       object N4: TMenuItem
         Caption = '-'
       end
-      object Wiki1: TMenuItem
-        Caption = 'Wiki'
-        OnClick = Wiki1Click
-      end
-      object N2: TMenuItem
-        Caption = '-'
-      end
-      object A_propos: TMenuItem
-        Caption = 'Fichiers source'
-        OnClick = A_proposClick
-      end
-      object SiteofficieldeXi: TMenuItem
-        Caption = 'Site officiel de Xi'
-        OnClick = SiteofficieldeXiClick
-      end
-      object SiteofficielArduino1: TMenuItem
-        Caption = 'Site officiel Arduino'
-        OnClick = SiteofficielArduino1Click
-      end
-      object lchargerlesdrivers1: TMenuItem
-        Caption = 'T'#233'l'#233'charger les drivers'
-        OnClick = lchargerlesdrivers1Click
+      object Links: TMenuItem
+        Caption = 'Liens'
+        object Wiki1: TMenuItem
+          Caption = 'Wiki'
+          OnClick = Wiki1Click
+        end
+        object N2: TMenuItem
+          Caption = '-'
+        end
+        object A_propos: TMenuItem
+          Caption = 'Fichiers source'
+          OnClick = A_proposClick
+        end
+        object SiteofficieldeXi: TMenuItem
+          Caption = 'Site officiel de Xi'
+          OnClick = SiteofficieldeXiClick
+        end
+        object SiteofficielArduino1: TMenuItem
+          Caption = 'Site officiel Arduino'
+          OnClick = SiteofficielArduino1Click
+        end
+        object N8: TMenuItem
+          Caption = '-'
+        end
+        object lchargerlesdrivers1: TMenuItem
+          Caption = 'T'#233'l'#233'charger les drivers'
+          OnClick = lchargerlesdrivers1Click
+        end
       end
       object N1: TMenuItem
         Caption = '-'

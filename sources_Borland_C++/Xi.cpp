@@ -203,7 +203,7 @@ void __fastcall TInterfaceXi::SiteofficieldeXiClick(TObject *Sender)
 ShellExecute(0, 0, "http://mryslab.blogspot.fr/", 0, 0 , SW_SHOW );
 }
 //---------------------------------------------------------------------------
-void __fastcall TInterfaceXi::AllerplusloinBlocklyDuino1Click(TObject *Sender)
+void __fastcall TInterfaceXi::BlocklyArduinoClick(TObject *Sender)
 {
 ShellExecute(0, 0, "http://www.technologiescollege.fr/blockly@rduino/", 0, 0 , SW_SHOW );
 }
@@ -431,4 +431,53 @@ if (OpenDialog->Execute()==true) locate_doc=ExtractFilePath(OpenDialog->FileName
 INI->WriteString("locate Documentation", "locate_doc", locate_doc);
 }
 //---------------------------------------------------------------------------
+
+void __fastcall TInterfaceXi::Firmata_UnoClick(TObject *Sender)
+{
+xi_port=this->Edit1->Text.ToInt();
+INI->WriteInteger("port COM", "port", xi_port);
+ofstream fichier_s2("flash_uno.bat", ios::out | ios::trunc);  // ouverture en écriture avec effacement du fichier ouvert
+		if(fichier_s2)
+		{
+				fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\nSET currentpath=%~dp1\ncd %currentpath%tools\ncls\n.\\avrdude -Cavrdude.conf -v -patmega328p -carduino -P\\" << "\\" << ".\\COM" << xi_port << " -b115200 -D -V -Uflash:w:johnny-five_firmata_uno.hex:i" << "\npause";
+				fichier_s2.close();
+		}
+		else ShowMessage(Popup->Items->Strings[1]);
+ShellExecute(0, 0, "flash_uno.bat", 0, 0 , SW_SHOW );	
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TInterfaceXi::Firmata_MegaClick(TObject *Sender)
+{
+xi_port=this->Edit1->Text.ToInt();
+INI->WriteInteger("port COM", "port", xi_port);
+ofstream fichier_s2("flash_mega.bat", ios::out | ios::trunc);  // ouverture en écriture avec effacement du fichier ouvert
+		if(fichier_s2)
+		{
+				fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\nSET currentpath=%~dp1\ncd %currentpath%tools\ncls\n.\\avrdude -Cavrdude.conf -v -patmega2560 -cwiring -P\\" << "\\" << ".\\COM" << xi_port << " -b115200 -D -V -Uflash:w:johnny-five_firmata_mega.hex:i" << "\npause";
+				fichier_s2.close();
+		}
+		else ShowMessage(Popup->Items->Strings[1]);
+ShellExecute(0, 0, "flash_mega.bat", 0, 0 , SW_SHOW );	
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TInterfaceXi::w32Click(TObject *Sender)
+{
+ShellExecute(0, 0, "dpinst-x86.exe", 0, (ExtractFilePath(Application->ExeName) + "drivers").c_str() , SW_SHOW );
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TInterfaceXi::w64Click(TObject *Sender)
+{
+ShellExecute(0, 0, "dpinst-amd64.exe", 0, (ExtractFilePath(Application->ExeName) + "drivers").c_str() , SW_SHOW );
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TInterfaceXi::DriversClick(TObject *Sender)
+{
+ShellExecute(0, 0, "explorer.exe", (ExtractFilePath(Application->ExeName) + "drivers").c_str(), 0, SW_SHOW );
+}
+//---------------------------------------------------------------------------
+
 

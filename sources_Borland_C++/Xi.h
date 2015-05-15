@@ -32,7 +32,7 @@ __published:	// Composants gérés par l'EDI
 	TLabel *Label3;
 	TLabel *Label2;
 	TEdit *Edit1;
-	TMenuItem *AllerplusloinBlocklyDuino1;
+	TMenuItem *BlocklyArduino;
 	TMenuItem *Wiki1;
 	TMenuItem *Documentation1;
 	TMenuItem *PrparerArduino1;
@@ -78,8 +78,19 @@ __published:	// Composants gérés par l'EDI
 	TMenuItem *lchargerlesdrivers1;
 	TOpenDialog *OpenDialog;
 	TComboBox *Popup;
+	TMenuItem *InstallDrivers;
+	TMenuItem *w32;
+	TMenuItem *w64;
+	TMenuItem *Upload;
+	TMenuItem *Firmata_Uno;
+	TMenuItem *Firmata_Mega;
+	TMenuItem *Locate;
+	TMenuItem *Drivers;
+	TMenuItem *Links;
+	TMenuItem *N8;
+	TMenuItem *N9;
 	void __fastcall A_proposClick(TObject *Sender);
-	void __fastcall AllerplusloinBlocklyDuino1Click(TObject *Sender);
+	void __fastcall BlocklyArduinoClick(TObject *Sender);
 	void __fastcall PrparerArduino1Click(TObject *Sender);
 	void __fastcall Utilisation1Click(TObject *Sender);
 	void __fastcall N3Mmentodescommandes1Click(TObject *Sender);
@@ -109,6 +120,11 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall Localiserledossierbibliothque1Click(TObject *Sender);
 	void __fastcall Localiserledossierprojets1Click(TObject *Sender);
 	void __fastcall Localiserledossierdocumentation1Click(TObject *Sender);
+	void __fastcall Firmata_UnoClick(TObject *Sender);
+	void __fastcall Firmata_MegaClick(TObject *Sender);
+	void __fastcall w32Click(TObject *Sender);
+	void __fastcall w64Click(TObject *Sender);
+	void __fastcall DriversClick(TObject *Sender);
 private:	// Déclarations de l'utilisateur
 	TLabel * interLabel ;
 	TButton * interButton ;
