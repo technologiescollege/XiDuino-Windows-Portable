@@ -1,6 +1,6 @@
 Xi
 ======
-International : FR / EN / ES
+International : FR / EN / ES (_thanks to José Manuel Ruiz_)
 
 ![](https://raw.githubusercontent.com/technologiescollege/XiDuino-Windows-Portable/master/aide/0-presentation/Xi.png) ou comment inter-connecter nos micro-contrôleurs modernes.
 
@@ -8,7 +8,7 @@ _**How to inter-connect our modern micro-controllers.**_
 
 Xi permet de simultanément connecter, contrôler et surveiller **plusieurs** cartes Arduino, BeagleBone Black et Raspberry Pi par le biais de Scratch 2.0 comme interface graphique globale.
 
-_Xi enables to connect, control and supervise simultaneously several Arduino cards, BeagleBone Black and Raspberry Pi thanks to Scratch 2.0 as a global graphic interface._
+_Xi enables to connect, control and supervise simultaneously **several** Arduino cards, BeagleBone Black and Raspberry Pi thanks to Scratch 2.0 as a global graphic interface._
 
 ![](https://raw.githubusercontent.com/technologiescollege/XiDuino-Windows-Portable/master/aide/0-presentation/Screenshot%20-%2008192014%20-%2003-20-36%20PM.png)
 
@@ -29,7 +29,7 @@ Le but de ce clone du projet initial est de permettre de disposer :
 - d'une version portable sous Windows afin de ne pas avoir à installer les pré-requis, ceux-ci étant fonctionnels dans le sous-dossier "nodejs" du dossier "xiduino_windows_portable" ;
 - d'un lanceur graphique utilisable par des enfants.
 
-_Portable version_
+_**Portable version**_
 
 _The aim of this clone is to have at your disposal:_
 
@@ -43,10 +43,9 @@ _The documentation for the setup and use of Xi are available in the folder "aide
 
 **ATTENTION** : cette documentation est en perpétuelle évolution car le créateur de s2a/Xi, Alan Yorinks, continue à faire évoluer ses projets. Bien que parfaitement fonctionnelle, quand une version stable sera en ligne je traduirai sa documentation.
 
-_Warning: This documentation is in constant evolution as the s2a/Xi creator, Alan Yorinks, is still making his projects evolve. Although perfectly functional, when a final version will be on line, I will translate its documentation._
+_**Warning**: This documentation is in constant evolution as the s2a/Xi creator, Alan Yorinks, is still making his projects evolve. Although perfectly functional, when a final version will be on line, I will translate its documentation._
 
-## Avec une interface graphique
-_With a graphic interface_
+## Avec une interface graphique / With a graphic interface
 
 ![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/Capture_EXE.JPG)
 
@@ -58,4 +57,4 @@ _With a graphic interface_
 
 _1. **Xi only works on the on-line version** of Scratch2.0_
 
-_2. The projects made using Xi cannot be saved on your online account._ 
+_2. The projects made using Xi cannot be saved on your online account._
