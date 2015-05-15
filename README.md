@@ -46,8 +46,9 @@ _The documentation for the setup and use of Xi are available in the folder "aide
 _**Warning**: This documentation is in constant evolution as the s2a/Xi creator, Alan Yorinks, is still making his projects evolve. Although perfectly functional, when a final version will be on line, I will translate its documentation._
 
 ## Avec une interface graphique / With a graphic interface
-
+![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/Capture_EXE_EN.JPG)
 ![](https://github.com/technologiescollege/XiDuino-Windows-Portable/blob/master/aide/Capture_EXE.JPG)
+
 
 ### Limites connues à ce jour imposées par l'équipe de développement de Scratch :
 1. **Xi ne fonctionne que** sur la version en ligne de Scratch2.0
