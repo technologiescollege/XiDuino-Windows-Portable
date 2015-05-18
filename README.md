@@ -68,6 +68,7 @@ Liens hypertextes directs vers le site expérimental ScratchX quand on clique su
 Version 2.2.1 du 16 mai 2015
 ------------------------
 Installation des pilotes (32 & 64 bits) depuis le menu 'Outils'.
+
 Ouverture du dossier 'drivers' depuis Outils > Localiser.
 
 Version 2.2.0 du 14 mai 2015
