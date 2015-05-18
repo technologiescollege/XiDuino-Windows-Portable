@@ -18,7 +18,7 @@
       <Items>
         <FR>Le fichier scratch2.bat n'existe pas.\Le fichier scratch2.bat n'existe pas.\Le fichier xi_portable_Win.bat n'existe pas.\Le numéro du port COM doit être un entier.\Le numéro du port d'écoute doit être un entier compris entre 0~65535.\Interface réalisée par Sébastien Canet, décembre 2014 - v2.2.1 - mai 2015\Afficher l'adresse IP du poste\Cacher l'adresse IP du poste</FR>
         <EN>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 'xi_portable_Win.bat' does not exist.\#COM port must be an integer.\The listening port number must be in range [0~65535].\Software created by Sébastien Canet, december 2014 - v2.2.1 - mai 2015\Show computer IP adress\Hide computer IP adress</EN>
-		<ES>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 'xi_portable_Win.bat' does not exist.\#COM port must be an integer.\The listening port number must be in range [0~65535].\Software created by Sébastien Canet, december 2014 - v2.2.1 - mai 2015\Show computer IP adress\Hide computer IP adress</ES>
+		<ES>El fichero 'scratch2.bat' no existe.\El fichero 'scratch2.bat' no existe.\El fichero 'xi_portable_Win.bat' no existe.\El numero de puerto #COM debe ser un numero entero.\El numero de puerto debe encntrarse en el rango [0~65535].\Software creado por Sébastien Canet, diciembre 2014 - v2.2.1 - mayo 2015\Mostrar la IP del computador\Ocultar la IP del computador</ES>
       </Items>
     </Popup>
 	<InterfaceXi type="TInterfaceXi">
@@ -46,7 +46,7 @@
       <Caption>
         <FR>au port d'écoute</FR>
         <EN>XiServer is on #</EN>
-		<ES>XiServer es en</ES>
+		<ES>el puerto XiServer esta activado</ES>
       </Caption>
     </Label3>
     <Label4 type="TLabel">
@@ -109,14 +109,14 @@
       <Caption>
         <FR>Français</FR>
         <EN>French</EN>
-		<ES>Françes</ES>
+		<ES>Frances</ES>
       </Caption>
     </FrenchLang>
     <EnglishLang type="TMenuItem">
       <Caption>
         <FR>Anglais</FR>
         <EN>English</EN>
-		<ES>Englices</ES>
+		<ES>Ingles</ES>
       </Caption>
     </EnglishLang>
 	<SpanishLang type="TMenuItem">
@@ -172,7 +172,7 @@
 			  <Caption>
 				<FR>&Installer les pilotes</FR>
 				<EN>&Install drivers</EN>
-				<ES>&Install drivers</ES>
+				<ES>&Instalar drivers</ES>
 			  </Caption>
 			</InstallDrivers>
 					<w32 type="TMenuItem">
@@ -193,7 +193,7 @@
 			  <Caption>
 				<FR>Téléverser 'Firmata' dans une &carte</FR>
 				<EN>Upload 'Firmata' in a &card</EN>
-				<ES>Upload 'Firmata' in a &card</ES>
+				<ES>Descargar 'Firmata' en una &card</ES>
 			  </Caption>
 			</Upload>
 					<Firmata_Uno type="TMenuItem">
@@ -221,7 +221,7 @@
 			  <Caption>
 				<FR>&Localiser les dossiers</FR>
 				<EN>&Locate folders</EN>
-				<ES>&Locate folders</ES>
+				<ES>&Localizar carpetas</ES>
 			  </Caption>
 			</Locate>
 					<Ouvrir type="TMenuItem">
@@ -256,7 +256,7 @@
 					  <Caption>
 						<FR>Ouvrir le dossier 'pilotes'</FR>
 						<EN>Open 'drivers' folder</EN>
-						<ES>Open 'drivers' folder</ES>
+						<ES>Abrir carpeta de 'drivers'</ES>
 					  </Caption>
 					</Drivers>		
 			<Init type="TMenuItem">
@@ -270,7 +270,7 @@
 			  <Caption>
 				<FR>Afficher l'adresse &IP du poste</FR>
 				<EN>Show computer &IP adress</EN>
-				<ES>Mostrar la direccion &IPs</ES>
+				<ES>Mostrar la direccion &IP</ES>
 			  </Caption>
 			</AfficherladresseIPduposte1>
 	<Documentation1 type="TMenuItem">
@@ -283,7 +283,7 @@
     <BlocklyArduino type="TMenuItem">
       <Caption>
         <FR>Aller plus loin avec &Blockly@rduino</FR>
-        <EN>Furthermore with &Blockly@rduino</EN>
+        <EN>Go furthermore with &Blockly@rduino</EN>
 		<ES>Ademas con &Blockly@rduino</ES>
       </Caption>
     </BlocklyArduino>
@@ -331,9 +331,9 @@
 			</N3Mmentodescommandes1>
 			<Links type="TMenuItem">
 			  <Caption>
-				<FR>Liens</FR>
-				<EN>Links</EN>
-				<ES>Links</ES>
+				<FR>&Liens</FR>
+				<EN>&Links</EN>
+				<ES>&Enlaces</ES>
 			  </Caption>
 			</Links>
 					<Wiki1 type="TMenuItem">
