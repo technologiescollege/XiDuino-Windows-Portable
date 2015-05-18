@@ -1,4 +1,4 @@
-Xi
+Xi - panneau de contrôle
 ======
 International : FR / EN / ES (_thanks to José Manuel Ruiz_)
 
