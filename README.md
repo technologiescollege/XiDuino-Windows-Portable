@@ -59,3 +59,29 @@ _**Warning**: This documentation is in constant evolution as the s2a/Xi creator,
 _1. **Xi only works on the on-line version** of Scratch2.0_
 
 _2. The projects made using Xi cannot be saved on your online account._
+
+
+Version 2.2.2 du 18 mai 2015
+------------------------
+Liens hypertextes directs vers le site expérimental ScratchX quand on clique sur le bouton "Scratch en ligne" : version internationale (en anglais) et version en français (qu'il faudra que je raccourcisse...).
+
+Version 2.2.1 du 16 mai 2015
+------------------------
+Installation des pilotes (32 & 64 bits) depuis le menu 'Outils'.
+Ouverture du dossier 'drivers' depuis Outils > Localiser.
+
+Version 2.2.0 du 14 mai 2015
+------------------------
+Téléversement de FirmataPlus depuis le menu 'Outils', pour Uno & Mega.
+
+Version 2.1.1 du 8 mai 2015
+------------------------
+Rajouts de traductions qui m'avaient échappées.
+
+Correction du lien vers [Blockly@rduino](https://github.com/technologiescollege/Blockly-at-rduino).
+
+Version 2.1 du 22 février 2015
+------------------------
+Rajout de la possibilité de sélectionner les dossiers utilisés pour afficher les documentations, fichiers exemples, etc.
+Il est donc possible de modifier les préférences en éditant le fichier 'xi.ini' mais aussi par l'interface graphique.
+_Pensez à relancer le logiciel après._
