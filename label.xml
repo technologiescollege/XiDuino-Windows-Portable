@@ -16,9 +16,9 @@
   <Labels>    
     <Popup type="TComboBox">
       <Items>
-        <FR>Le fichier scratch2.bat n'existe pas.\Le fichier scratch2.bat n'existe pas.\Le fichier xi_portable_Win.bat n'existe pas.\Le numéro du port COM doit être un entier.\Le numéro du port d'écoute doit être un entier compris entre 0~65535.\Interface réalisée par Sébastien Canet, décembre 2014 - v2.2.1 - mai 2015\Afficher l'adresse IP du poste\Cacher l'adresse IP du poste</FR>
-        <EN>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 'xi_portable_Win.bat' does not exist.\#COM port must be an integer.\The listening port number must be in range [0~65535].\Software created by Sébastien Canet, december 2014 - v2.2.1 - mai 2015\Show computer IP adress\Hide computer IP adress</EN>
-		<ES>El fichero 'scratch2.bat' no existe.\El fichero 'scratch2.bat' no existe.\El fichero 'xi_portable_Win.bat' no existe.\El numero de puerto #COM debe ser un numero entero.\El numero de puerto debe encntrarse en el rango [0~65535].\Software creado por Sébastien Canet, diciembre 2014 - v2.2.1 - mayo 2015\Mostrar la IP del computador\Ocultar la IP del computador</ES>
+        <FR>Le fichier scratch2.bat n'existe pas.\Le fichier scratch2.bat n'existe pas.\Le fichier xi_portable_Win.bat n'existe pas.\Le numéro du port COM doit être un entier.\Le numéro du port d'écoute doit être un entier compris entre 0~65535.\Interface réalisée par Sébastien Canet, décembre 2014 - v2.2.2 - mai 2015\Afficher l'adresse IP du poste\Cacher l'adresse IP du poste</FR>
+        <EN>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 'xi_portable_Win.bat' does not exist.\#COM port must be an integer.\The listening port number must be in range [0~65535].\Software created by Sébastien Canet, december 2014 - v2.2.2 - mai 2015\Show computer IP adress\Hide computer IP adress</EN>
+		<ES>El fichero 'scratch2.bat' no existe.\El fichero 'scratch2.bat' no existe.\El fichero 'xi_portable_Win.bat' no existe.\El numero de puerto #COM debe ser un numero entero.\El numero de puerto debe encntrarse en el rango [0~65535].\Software creado por Sébastien Canet, diciembre 2014 - v2.2.2 - mayo 2015\Mostrar la IP del computador\Ocultar la IP del computador</ES>
       </Items>
     </Popup>
 	<InterfaceXi type="TInterfaceXi">
